@@ -1,3 +1,2 @@
 #!/bin/bash
-mv README.md /tmp/u
-mv README.md /tmp/u
+mv [[:upper:]]* /tmp/u
