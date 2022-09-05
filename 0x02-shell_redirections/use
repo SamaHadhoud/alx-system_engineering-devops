@@ -1,8 +1,8 @@
 #!/bin/bash
-STR="10-no_more_js"
+STR="11-directories"
 echo -e "#!/bin/bash">>$STR;
-echo "find . -name '*.js' -type f -delete">>$STR;
+echo "find ./* -type d -print | wc -l">>$STR;
 chmod a+x $STR;
 git add *
-git commit -m "added file 10 for task 10"
+git commit -m "added file 11 for task 11"
 git push
