@@ -1,8 +1,8 @@
 #!/bin/bash
-STR="7-file"
+STR="8-cwd_state"
 echo -e "#!/bin/bash">>$STR;
-echo "echo 'Best School' > '\*\\'\'''Best School'\'\''\\*$\?\*\*\*\*\*:)'">>$STR;
+echo "ls -la > ls_cwd_content">>$STR;
 chmod a+x $STR;
 git add *
-git commit -m "added file 7 for task 7"
+git commit -m "added file 8 for task 8"
 git push
