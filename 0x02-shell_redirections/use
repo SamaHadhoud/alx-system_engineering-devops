@@ -1,8 +1,8 @@
 #!/bin/bash
-STR="6-third_line"
+STR="7-file"
 echo -e "#!/bin/bash">>$STR;
-echo "head -3 iacta | tail -1">>$STR;
+echo "echo "Best School" > '\*\\'\''"Best School"\'\''\\*$\?\*\*\*\*\*:)'">>$STR;
 chmod a+x $STR;
 git add *
-git commit -m "added file 6 for task 6"
+git commit -m "added file 7 for task 7"
 git push
