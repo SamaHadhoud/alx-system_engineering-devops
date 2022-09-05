@@ -1,8 +1,8 @@
 #!/bin/bash
-STR="11-directories"
+STR="12-newest_files"
 echo -e "#!/bin/bash">>$STR;
-echo "find ./* -type d -print | wc -l">>$STR;
+echo "ls -t | head">>$STR;
 chmod a+x $STR;
 git add *
-git commit -m "added file 11 for task 11"
+git commit -m "added file 12 for task 12"
 git push
