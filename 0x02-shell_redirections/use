@@ -1,8 +1,8 @@
 #!/bin/bash
-STR="9-duplicate_last_line"
+STR="10-no_more_js"
 echo -e "#!/bin/bash">>$STR;
-echo "tail -1 iacta >> iacta">>$STR;
+echo "find . -name '*.js' -type f -delete">>$STR;
 chmod a+x $STR;
 git add *
-git commit -m "added file 9 for task 9"
+git commit -m "added file 10 for task 10"
 git push
