@@ -1,5 +1,5 @@
 #!/bin/bash
-STR="0_hello_world"
+STR="0-hello_world"
 echo -e "#!/bin/bash">>$STR;
 echo "echo hello, world">>$STR;
 chmod a+x $STR;
