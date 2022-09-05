@@ -1,8 +1,8 @@
 #!/bin/bash
-STR="2-hellofile"
+STR="3-twofiles"
 echo -e "#!/bin/bash">>$STR;
-echo "cat /etc/passwd">>$STR;
+echo "cat /etc/passwd /etc/hosts">>$STR;
 chmod a+x $STR;
 git add *
-git commit -m "added file 1 for task 1"
+git commit -m "added file 3 for task 3"
 git push
