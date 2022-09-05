@@ -1,8 +1,8 @@
 #!/bin/bash
-STR="8-cwd_state"
+STR="9-duplicate_last_line"
 echo -e "#!/bin/bash">>$STR;
-echo "ls -la > ls_cwd_content">>$STR;
+echo "tail -1 iacta >> iacta">>$STR;
 chmod a+x $STR;
 git add *
-git commit -m "added file 8 for task 8"
+git commit -m "added file 9 for task 9"
 git push
