@@ -1,8 +1,8 @@
 #!/bin/bash
-STR="17-hidethisword"
+STR="18-letteronly"
 echo -e "#!/bin/bash">>$STR;
-echo 'grep -v bin /etc/passwd'>>$STR;
+echo 'grep [[:alpha:]*] /etc/ssh/sshd_config'>>$STR;
 chmod a+x $STR;
 git add *
-git commit -m "added file 17 for task 17"
+git commit -m "added file 18 for task 18"
 git push
