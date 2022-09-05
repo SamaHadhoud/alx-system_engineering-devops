@@ -1,8 +1,8 @@
 #!/bin/bash
-STR="15-countthatword"
+STR="16-whatsnext"
 echo -e "#!/bin/bash">>$STR;
-echo 'grep "bin" /etc/passwd | wc -l'>>$STR;
+echo 'grep -A 3 root /etc/passwd'>>$STR;
 chmod a+x $STR;
 git add *
-git commit -m "added file 15 for task 15"
+git commit -m "added file 16 for task 16"
 git push
