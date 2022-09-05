@@ -1,8 +1,8 @@
 #!/bin/bash
-STR="5-firstlines"
+STR="6-third_line"
 echo -e "#!/bin/bash">>$STR;
-echo "head /etc/passwd">>$STR;
+echo "head -3 iacta | tail -1">>$STR;
 chmod a+x $STR;
 git add *
-git commit -m "added file 5 for task 5"
+git commit -m "added file 6 for task 6"
 git push
