@@ -1,8 +1,8 @@
 #!/bin/bash
-STR="13-unique"
+STR="14-findthatword"
 echo -e "#!/bin/bash">>$STR;
-echo "sort | uniq -u">>$STR;
+echo 'grep "root" /etc/passwd'>>$STR;
 chmod a+x $STR;
 git add *
-git commit -m "added file 13 for task 13"
+git commit -m "added file 14 for task 14"
 git push
