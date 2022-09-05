@@ -1,7 +1,7 @@
 #!/bin/bash
 STR="0-hello_world"
 echo -e "#!/bin/bash">>$STR;
-echo "echo -e "hello, world\n"">>$STR;
+echo "echo Hello, world">>$STR;
 chmod a+x $STR;
 git add *
 git commit -m "added file 0 for task 0"
