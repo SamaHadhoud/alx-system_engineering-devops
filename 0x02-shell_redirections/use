@@ -1,8 +1,8 @@
 #!/bin/bash
-STR="3-twofiles"
+STR="4-lastlines"
 echo -e "#!/bin/bash">>$STR;
-echo "cat /etc/passwd /etc/hosts">>$STR;
+echo "tail /etc/passwd">>$STR;
 chmod a+x $STR;
 git add *
-git commit -m "added file 3 for task 3"
+git commit -m "added file 4 for task 4"
 git push
