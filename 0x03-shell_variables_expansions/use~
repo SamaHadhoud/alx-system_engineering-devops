@@ -1,8 +1,0 @@
-#!/bin/bash
-STR="22-users_and_homes"
-echo -e "#!/bin/bash">>$STR;
-echo 'cut -d":" -f 1,6 /etc/passwd | sort'>>$STR;
-chmod a+x $STR;
-git add *
-git commit -m "added file 22 for task 22"
-git push
