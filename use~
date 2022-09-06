@@ -1,9 +1,0 @@
-#!/bin/bash
-STR = "0_hello_world"
-echo -e "#!/bin/bash\n">>$STR;
-echo "echo hello, world">>$STR;
-echo -e "\n">>$STR;
-chmod u+x $STR;
-git add *
-git commit -m "added file 0 for task 0"
-git push
