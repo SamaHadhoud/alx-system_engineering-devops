@@ -1,8 +1,8 @@
 #!/bin/bash
-STR="101-rot13"
+STR="02-odd"
 echo -e "#!/bin/bash">>$STR;
-echo "cat $quote | tr 'A-Za-z' 'N-ZA-Mn-za-m'">>$STR;
+echo "paste - - | cut -f1">>$STR;
 chmod a+x $STR;
 git add *
-git commit -m "added file 15 for advanced task 15"
+git commit -m "added file 16 for advanced task 16"
 git push
