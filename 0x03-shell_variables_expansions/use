@@ -1,8 +1,8 @@
 #!/bin/bash
-STR="9-divide_and_rule"
+STR="10-love_exponent_breath"
 echo -e "#!/bin/bash">>$STR;
-echo 'echo $((POWER/DIVIDE))'>>$STR;
+echo 'echo $((BREATH**LOVE))'>>$STR;
 chmod a+x $STR;
 git add *
-git commit -m "added file 9 for task 9"
+git commit -m "added file 10 for task 10"
 git push
