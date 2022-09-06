@@ -1,8 +1,8 @@
 #!/bin/bash
-STR="0-alias"
+STR="1-hello_you"
 echo -e "#!/bin/bash">>$STR;
-echo 'alias ls="rm *"'>>$STR;
+echo 'echo "hello $USER"'>>$STR;
 chmod a+x $STR;
 git add *
-git commit -m "added file 0 for task 0"
+git commit -m "added file 1 for task 1"
 git push
