@@ -1,8 +1,8 @@
 #!/bin/bash
-STR="12-combinations"
+STR="13-print_float"
 echo -e "#!/bin/bash">>$STR;
-echo 'echo {a..z}{a..z} | tr " " "\n" | grep -v "oo"'>>$STR;
+echo 'printf "%.2f\n" $NUM'>>$STR;
 chmod a+x $STR;
 git add *
-git commit -m "added file 12 for task 12"
+git commit -m "added file 13 for task 13"
 git push
