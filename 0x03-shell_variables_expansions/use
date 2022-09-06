@@ -1,8 +1,8 @@
 #!/bin/bash
-STR="8-true_knowledge"
+STR="9-divide_and_rule"
 echo -e "#!/bin/bash">>$STR;
-echo 'echo $(($TRUEKNOWLEDGE+128))'>>$STR;
+echo 'echo $((POWER/DIVIDE))'>>$STR;
 chmod a+x $STR;
 git add *
-git commit -m "added file 8 for task 8"
+git commit -m "added file 9 for task 9"
 git push
