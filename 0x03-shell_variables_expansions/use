@@ -1,8 +1,8 @@
 #!/bin/bash
-STR="11-binary_to_decimal"
+STR="12-combinations"
 echo -e "#!/bin/bash">>$STR;
-echo 'echo "$((2#$BINARY))"'>>$STR;
+echo 'echo {a..z}{a..z} | tr " " "\n" | grep -v "oo"'>>$STR;
 chmod a+x $STR;
 git add *
-git commit -m "added file 11 for task 11"
+git commit -m "added file 12 for task 12"
 git push
