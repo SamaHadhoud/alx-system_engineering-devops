@@ -1,8 +1,8 @@
 #!/bin/bash
-STR="6-create_local_variable"
+STR="7-create_global_variable"
 echo -e "#!/bin/bash">>$STR;
-echo 'BEST=School'>>$STR;
+echo 'export BEST=School'>>$STR;
 chmod a+x $STR;
 git add *
-git commit -m "added file 6 for task 6"
+git commit -m "added file 7 for task 7"
 git push
