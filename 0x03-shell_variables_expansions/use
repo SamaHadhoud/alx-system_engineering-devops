@@ -1,8 +1,8 @@
 #!/bin/bash
-STR="5-local_variables"
+STR="6-create_local_variable"
 echo -e "#!/bin/bash">>$STR;
-echo 'set | less'>>$STR;
+echo 'BEST=School'>>$STR;
 chmod a+x $STR;
 git add *
-git commit -m "added file 5 for task 5"
+git commit -m "added file 6 for task 6"
 git push
