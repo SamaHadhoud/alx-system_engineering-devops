@@ -1,8 +1,8 @@
 #!/bin/bash
-STR="1-hello_you"
+STR="2-path"
 echo -e "#!/bin/bash">>$STR;
-echo 'echo "hello $USER"'>>$STR;
+echo 'PATH=$PATH:/action'>>$STR;
 chmod a+x $STR;
 git add *
-git commit -m "added file 1 for task 1"
+git commit -m "added file 2 for task 2"
 git push
