@@ -1,8 +1,8 @@
 #!/bin/bash
-STR="4-global_variables"
+STR="5-local_variables"
 echo -e "#!/bin/bash">>$STR;
-echo 'printenv'>>$STR;
+echo 'set | less'>>$STR;
 chmod a+x $STR;
 git add *
-git commit -m "added file 4 for task 4"
+git commit -m "added file 5 for task 5"
 git push
