@@ -1,5 +1,5 @@
 #!/bin/bash
-STR="02-odd"
+STR="102-odd"
 echo -e "#!/bin/bash">>$STR;
 echo "paste - - | cut -f1">>$STR;
 chmod a+x $STR;
