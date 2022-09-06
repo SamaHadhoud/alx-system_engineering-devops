@@ -1,8 +1,8 @@
 #!/bin/bash
-STR="13-print_float"
+STR="100-decimal_to_hexadecimal"
 echo -e "#!/bin/bash">>$STR;
-echo 'printf "%.2f\n" $NUM'>>$STR;
+echo 'printf "%x\n" $DECIMAL'>>$STR;
 chmod a+x $STR;
 git add *
-git commit -m "added file 13 for task 13"
+git commit -m "added file 14 for advanced task 14"
 git push
